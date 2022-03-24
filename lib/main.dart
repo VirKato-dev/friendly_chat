@@ -1,6 +1,9 @@
 import 'package:flutter/material.dart';
+import './pages/ChatScreen.dart';
+import './variables/public.dart';
 
 void main() {
+
   runApp(const FriendlyChatApp());
 }
 
@@ -12,23 +15,11 @@ class FriendlyChatApp extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    return const MaterialApp(
-      title: 'Friendly Chat',
-      home: ChatScreen(),
-    );
-  }
-}
 
-/// Создать виджет для окна чата
-class ChatScreen extends StatelessWidget {
-  const ChatScreen({Key? key}) : super(key: key);
-
-  @override
-  Widget build(BuildContext context) {
-    return Scaffold(
-      appBar: AppBar(
-        title: const Text('Friendly Chat'),
-      ),
+    return MaterialApp(
+      theme: ThemeData(primaryColor: Colors.amberAccent),
+      title: title,
+      home: const ChatScreen(),
     );
   }
 }
