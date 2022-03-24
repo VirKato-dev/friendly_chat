@@ -1,6 +1,6 @@
 import 'package:flutter/material.dart';
 import '../variables/public.dart';
-import '../containers/ChatContainer.dart';
+import '../containers/chat_container.dart';
 
 
 /// Создать виджет для окна чата
